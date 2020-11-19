@@ -1,0 +1,132 @@
+
+.container {
+    margin: auto;
+    width: 100%;
+}
+.main .column {
+    color: #fff;
+    background: #333333;
+    position: relative;
+    text-align: center;
+    width: 98%;
+    height: 350px;
+    margin: 10px;
+}
+.main .column .text{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid #eef1ee;
+    padding: 30px;
+}
+.main .column .text h2{
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+.main .column .text p{
+    font-size: 18px;
+}
+/*border styler*/
+svg,rect{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill:transparent;
+}
+/*border style running across the frame*/
+rect{
+    stroke: #69ca62;
+    stroke-width: 5;
+    stroke-dasharray: 200;
+    animation: animate 5s linear infinite; /*animation-duration property*/
+}
+.main .container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* The element to apply the animation @keyframes  */
+@keyframes animate{
+    0%{
+        stroke-dashoffset: 800;
+    }
+}
+
+@media(min-width:360px){
+    .main .column{
+        width: 100%;
+        height: 400px;
+    }
+    svg,rect{
+        top: 0;
+        left: 0;
+        width: 98%;
+        height: 100%;
+        fill:transparent;
+    }
+}
+
+
+@media(min-width:520px){
+    .main .column{
+        width: 85%;
+        height: 320px;
+    }
+}
+
+@media(min-width:600px){
+    .main .column{
+        width: 100%;
+        height: 270px;
+    }
+    svg,rect{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill:transparent;
+    }
+}
+
+@media(min-width:680px){
+    .main .column{
+        width: 46%;
+        height: 460px;
+    }
+    svg,rect{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill:transparent;
+    }
+}
+@media(min-width:780px){
+    .main .column{
+        width: 47%;
+        height: 350px;
+    }
+    svg,rect{
+        top: 0;
+        left: 0;
+        width: 99%;
+        height: 100%;
+        fill:transparent;
+    }
+}
+@media(min-width:800px){
+    .main .column{
+        width: 31%;
+        height: 480px;
+    }
+    svg,rect{
+        top: 0;
+        left: 0;
+        width: 99%;
+        height: 100%;
+        fill:transparent;
+    }
+}
